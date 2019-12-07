@@ -2,3 +2,9 @@
  style="height:300px; width:600px" name="iframe_a">
 </iframe>
 
+<p><a href="file:///C:/Users/nural/OneDrive/Documents/Notepad++/HTML/first/first.html"
+ target="iframe_a"> About Nur</a></p><br>
+ 
+ <button onclick="document.getElementById('demo').innerHTML= Date()">
+ See Date and Time</button>
+ <p id="demo"> </p><br>
