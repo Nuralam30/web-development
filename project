@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 	<title> homepage </title>
@@ -6,15 +6,10 @@
 </head>
 <body>
 	<div class="container">
+		<div class="header">
 		<div class="logo">
 			<a href="homepage.html"><img src="css/logo.png" alt="School Logo" height="70px"></a>
 		</div>
-			<div class="user">
-				<a href="login.html"> Login </a>
-				or
-				<a href="sign.html">Sign in</a>
-			</div><br>
-
 			<div>
 				<nav class="menu">
 					<ul>
@@ -26,28 +21,68 @@
 				</nav>
 				
 			</div>
+
+			<div class="user">
+				<a href="login.html"> Login </a>
+				or
+				<a href="sign.html">Sign in</a>
+			</div>
+
+		</div>
 	</div>
 </body>
 </html>
 
 
 
-
 /* Head section style*/
 .container{ 
 	max-width: 1200px;
-	height:70px;
-	border: 1px solid #dedede;
 	margin: 0 auto;
-	padding: 15px;
 }
 
 body{
 	margin: 0;
 	background: #F0F8FF;
 }
+
+.header{
+	height:70px;
+	border: 1px solid #dedede;
+	padding: 10px;
+}
+
 .logo{
 	float: left;
+}
+
+/* Head section style end*/
+
+.menu{
+	float: left;
+	font-size: 20px;
+}
+
+.menu ul{
+	padding: 0;
+	margin: 0 auto;
+}
+
+.menu li{
+	float:left;
+	list-style:none;
+}
+
+.menu li a{
+	display: inline-block;
+	padding: 5px 20px;
+	text-decoration: none;
+	font-family: arial;
+	transition: all .5s;
+}
+
+.menu li a:hover{
+	background: #00BFFF;
 }
 
 .user{
@@ -67,26 +102,4 @@ body{
 .user a:hover{
 	color: #00BFFF;
 	padding:7px;
-}
-/* Head section style end*/
-
-.menu{
-	float: left;
-	font-size: 20px;
-}
-
-.menu li{
-	float:left;
-	list-style:none;
-	
-}
-
-.menu li a{
-	padding: 10px;
-	text-decoration: none;
-	font-family: arial;
-}
-
-.menu li a:hover{
-	background: #00BFFF;
 }
