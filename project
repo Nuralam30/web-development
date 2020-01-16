@@ -29,49 +29,84 @@
 			</div>
 
 		</div>
+		
+		<div class="gallery">
+			<div class="effect">
+				<img src="css/teachers.jpg" alt="Teachers">
+				<h2 class="item"> Some of the Teachers</h2>
+			</div>
+		</div>
+		<!--photo gallary creation end-->
+
+
+		<!--Recent Post and Updates-->
+		<div class="recent">
+			<div class="updates">
+
+			<div class="first">
+				<article class="post">
+				<img src="css/routine.jpg" alt="Routine">
+				<h2 class="stat"> The daily class</h2>
+				<p class="sq"> Students will got daily class routine here. They will be much benificial from here.Students will got daily class routine here. They will be much benificial from here.Students will got daily class routine here. They will be much benificial from here.</p>
+			</article>
+			</div>
 	</div>
 </body>
 </html>
 
 
 
-/* Head section style*/
-.container{ 
-	max-width: 1200px;
-	margin: 0 auto;
-}
 
 body{
 	margin: 0;
 	background: #F0F8FF;
 }
 
+
+/* Head section style*/
+.container{ 
+	max-width: 1200px;
+	margin: 0 auto;
+	border: 1px solid #dedede;
+	padding: 10px;
+}
+
+.clear{
+	clear: both;
+}
+
+
 .header{
+	background: #ADD8E6;
 	height:70px;
 	border: 1px solid #dedede;
 	padding: 10px;
 }
 
+
 .logo{
 	float: left;
 }
 
-/* Head section style end*/
 
 .menu{
 	float: left;
-	font-size: 20px;
+	font-size: 15px;
 }
 
+/* menu CSS start here*/
 .menu ul{
+	max-width: auto;
 	padding: 0;
 	margin: 0 auto;
 }
+
 
 .menu li{
 	float:left;
 	list-style:none;
 }
+
 
 .menu li a{
 	display: inline-block;
@@ -81,20 +116,31 @@ body{
 	transition: all .5s;
 }
 
+
 .menu li a:hover{
 	background: #00BFFF;
 }
 
+
+.menu ul ul{
+	max-height: auto;
+}
+.menu li li{
+	display: block;
+}
+/* menu CSS end here...*/
+
 .user{
 	float: right;
 }
+
 
 .user a{
 	display: block;
 	padding: 5px;
 	background: #d5eceb;
 	text-decoration: none;
-	font-family: arial;
+	font-family: sans-serif;
 	border-radius: 5px;
 
 }
@@ -102,4 +148,66 @@ body{
 .user a:hover{
 	color: #00BFFF;
 	padding:7px;
+}
+
+/*Photo gallery*/
+.gallery{
+	padding: 15px 0;
+	outline: none;
+}
+
+.gallery .effect{
+	position: relative;
+}
+
+.gallery .item{
+	position: absolute;
+	margin: 0;
+	left: 0;
+	right: 0;
+	bottom: 60px;
+	background: #0000005c;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	transition: all .25s;
+	opacity: 0;
+}
+
+.gallery .effect:hover .item{
+	bottom: 3px;
+	opacity: 1;
+}
+/*Photo gallery end*/
+
+
+/*Recent Post and Updates*/
+
+.updates{
+	margin-right: -10px;
+	margin-left: -10px;
+}
+
+
+.first{
+	width: 23.3%;
+	float: left;
+	padding:0 10px;
+}
+
+.first img{
+	max-width: 100%;
+}
+
+.post .stat+p{
+	margin-top: 0;
+}
+/*Recent Post and Updates end*/
+
+/* Head section style end*/
+
+.copy{
+	background: #ADD8E6;
+	padding: 15px;
+	text-align: center;
 }
